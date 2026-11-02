@@ -27,7 +27,7 @@ jobs:
           python-version: "3.12"
 
       - name: Build puck line profile
-        run: python builders/nhl_puck_line.py
+        run: python builders/nhl_puck_line.py && python builders/paste_tables.py
 
       - name: Commit refreshed data
         run: |
