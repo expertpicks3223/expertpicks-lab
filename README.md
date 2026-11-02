@@ -55,3 +55,7 @@ read Supabase once nothing public sits next to the database credentials.
 GitHub pauses scheduled workflows in public repos after 60 days without commits. The daily
 data commit keeps it active during the season. In the summer, re-enable it from the
 Actions tab if it pauses.
+
+## Closing-price results (finished seasons)
+
+`data/nhl/puck_line_prices_<season>.json` holds fixed, once-per-season results: what 1 unit on every team's -1.5 and +1.5 returned at DraftKings closing prices (main or alternate line). Built from OpticOdds historical odds; the raw open/close lines for DraftKings and FanDuel live in Supabase `odds.historical_lines`. The builder only reads this file, so it never needs odds access in the daily job.

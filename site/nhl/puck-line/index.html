@@ -9,13 +9,13 @@
   :root{
     --bg:#ffffff; --surface:#f5f6f8; --line:#e3e6eb; --text:#1c2633; --muted:#5d6878;
     --head:#1c2633; --head-text:#ffffff; --bar:#c9d1dc; --bar-fill:#1c2633; --avg:#d6452f;
-    --friendly:#1f7a4d; --friendly-bg:#e3f3ea; --neutral:#5d6878; --neutral-bg:#eceff3; --risky:#b3412e; --risky-bg:#f9e6e2;
+    --friendly:#1d5fa8; --friendly-bg:#e3eefa; --neutral:#5d6878; --neutral-bg:#eceff3; --risky:#8a5a00; --risky-bg:#fbf0d9; --pos:#1f7a4d; --negc:#b3412e;
     --focus:#2f6fdb;
   }
   [data-theme="dark"]{
     --bg:#141c26; --surface:#1c2633; --line:#2c3847; --text:#eef1f5; --muted:#a3adbb;
     --head:#0e141b; --head-text:#eef1f5; --bar:#2c3847; --bar-fill:#e8edf3; --avg:#ff7a5c;
-    --friendly:#6fd6a0; --friendly-bg:#173a2a; --neutral:#c3cbd6; --neutral-bg:#2a3542; --risky:#ff9a85; --risky-bg:#43231e;
+    --friendly:#8cc2ff; --friendly-bg:#1a2f4a; --neutral:#c3cbd6; --neutral-bg:#2a3542; --risky:#ffd27a; --risky-bg:#3d3018; --pos:#6fd6a0; --negc:#ff9a85;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{background:var(--bg);color:var(--text);font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
@@ -44,24 +44,27 @@
   tbody td:nth-child(2){text-align:left}
   .abbr{color:var(--muted);font-weight:500;font-size:12px;margin-left:4px}
   .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;letter-spacing:.02em}
-  .Friendly{color:var(--friendly);background:var(--friendly-bg)}
-  .Neutral{color:var(--neutral);background:var(--neutral-bg)}
-  .Risky{color:var(--risky);background:var(--risky-bg)}
+  .Wide{color:var(--friendly);background:var(--friendly-bg)}
+  .Average{color:var(--neutral);background:var(--neutral-bg)}
+  .Tight{color:var(--risky);background:var(--risky-bg)}
   .meter{display:inline-flex;align-items:center;gap:8px;justify-content:flex-end}
   .bar{position:relative;width:70px;height:6px;background:var(--bar);border-radius:3px}
   .bar i{position:absolute;left:0;top:0;bottom:0;background:var(--bar-fill);border-radius:3px}
   .bar u{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--avg)}
   .small{color:var(--muted);font-size:11px}
+  .pos{color:var(--pos)} .neg{color:var(--negc)}
   .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;color:var(--muted);font-size:11px;margin-top:8px}
   .foot a{color:inherit}
   .legend{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
   .legend .tick{display:inline-block;width:2px;height:10px;background:var(--avg);vertical-align:middle;margin-right:4px}
   .state{padding:28px;text-align:center;color:var(--muted)}
   .sh{display:none}
+  .prices .bar{display:none} .prices th .lg{display:none} .prices th .sh{display:inline} .prices thead th,.prices tbody td{padding-left:7px;padding-right:7px}
   @media (max-width:560px){
     .wrap{padding:8px} input[type=search]{width:120px} .hide-sm{display:none}
     table{min-width:0} thead th,tbody td{padding:8px 6px} thead th{font-size:10px;letter-spacing:.02em}
     .nm{display:none} .lg{display:none} .sh{display:inline} .abbr{margin-left:0;color:var(--text);font-weight:700;font-size:13px}
+    .prices .hp{display:none}
     .bar{display:none} .chip{font-size:11px;padding:5px 8px} .pill{font-size:10px;padding:2px 6px}
   }
 </style>
@@ -89,7 +92,7 @@
     </table>
   </div>
   <div class="foot">
-    <div class="legend"><span><span class="tick"></span>League average</span><span>* Fewer than 10 wins, small sample</span><span>Tier blends this season with last season</span></div>
+    <div class="legend"><span><span class="tick"></span>League average</span><span>* Fewer than 10 wins, small sample</span><span>Margin: Wide wins by 2+ often, Tight wins close. Blends this season with last</span><span id="plnote"></span></div>
     <div id="stamp"></div>
   </div>
 </div>
@@ -101,15 +104,20 @@
 
   var COLS = [
     {k:'name', label:'Team', type:'text'},
-    {k:'tier', label:'Tier', type:'tier'},
+    {k:'tier', label:'Margin', type:'tier', title:'Wide = wins by 2+ goals often. Tight = wins tend to be by one goal or in OT/SO. Blends this season with last season.'},
     {k:'wins', label:'Wins', type:'int'},
     {k:'win_by_2_pct', label:'Won by 2+', short:'By 2+', type:'meter', lg:'win_by_2_pct'},
-    {k:'needed_eng_pct', label:'Needed ENG', short:'ENG', type:'pct', title:'Share of 2+ goal wins that only reached 2 goals thanks to an empty-net goal'},
-    {k:'otso_win_pct', label:'OT/SO wins', type:'pct', title:'Share of wins that came in overtime or a shootout (these never cover -1.5)'},
-    {k:'cover_minus_15_pct', label:'-1.5 cover', type:'pct', cls:'hide-sm', title:'Won by 2+ goals, as a share of all games played'},
-    {k:'cover_plus_15_pct', label:'+1.5 cover', type:'pct', cls:'hide-sm', title:'Won, or lost by exactly 1 goal, as a share of all games played'}
+    {k:'needed_eng_pct', label:'Needed ENG', short:'ENG', type:'pct', cls:'hp', title:'Share of 2+ goal wins that only reached 2 goals thanks to an empty-net goal'},
+    {k:'otso_win_pct', label:'OT/SO wins', short:'OT/SO', type:'pct', cls:'hp', title:'Share of wins that came in overtime or a shootout (these never cover -1.5)'},
+    {k:'cover_minus_15_pct', label:'-1.5 cover', short:'-1.5 %', type:'pct', cls:'hide-sm', title:'Won by 2+ goals, as a share of all games played'},
+    {k:'cover_plus_15_pct', label:'+1.5 cover', short:'+1.5 %', type:'pct', cls:'hide-sm', title:'Won, or lost by exactly 1 goal, as a share of all games played'}
   ];
-  var TIER_ORDER = {Friendly:3, Neutral:2, Risky:1};
+  var PRICE_COLS = [
+    {k:'minus_units', label:'-1.5 P/L', short:'-1.5 P/L', type:'units', title:'Profit or loss betting this team -1.5 every game for 1 unit at DraftKings closing prices (2025-26)'},
+    {k:'plus_units', label:'+1.5 P/L', short:'+1.5 P/L', type:'units', title:'Profit or loss betting this team +1.5 every game for 1 unit at DraftKings closing prices (2025-26)'}
+  ];
+  function cols(){ return state.season === 'previous' && state.data && state.data.previous_prices ? COLS.concat(PRICE_COLS) : COLS; }
+  var TIER_ORDER = {Wide:3, Average:2, Tight:1};
   var state = {season:'current', sort:'tier', dir:-1, q:'', data:null};
 
   function pct(v){ return v == null ? '–' : (v*100).toFixed(1) + '%'; }
@@ -120,13 +128,14 @@
     return state.data.teams.map(function(t){
       var p = t[s] || {};
       return {team:t.team, name:t.name, tier:t.tier, tier_score:t.tier_score, wins:p.wins, win_by_2_pct:p.win_by_2_pct,
-        needed_eng_pct:p.needed_eng_pct, otso_win_pct:p.otso_win_pct, cover_minus_15_pct:p.cover_minus_15_pct, cover_plus_15_pct:p.cover_plus_15_pct};
+        needed_eng_pct:p.needed_eng_pct, otso_win_pct:p.otso_win_pct, cover_minus_15_pct:p.cover_minus_15_pct, cover_plus_15_pct:p.cover_plus_15_pct,
+        minus_units:t.previous_prices ? t.previous_prices.minus.units : null, plus_units:t.previous_prices ? t.previous_prices.plus.units : null};
     });
   }
 
   function renderHead(){
     var h = document.getElementById('head');
-    h.innerHTML = COLS.map(function(c){
+    h.innerHTML = cols().map(function(c){
       var sorted = state.sort === c.k ? (state.dir > 0 ? 'ascending' : 'descending') : 'none';
       var arr = state.sort === c.k ? (state.dir > 0 ? '▲' : '▼') : '↕';
       return '<th scope="col" tabindex="0" data-k="'+c.k+'" aria-sort="'+sorted+'" class="'+(c.cls||'')+'"'+(c.title?' title="'+esc(c.title)+'"':'')+'><span class="lg">'+c.label+'</span><span class="sh">'+(c.short||c.label)+'</span><span class="arr">'+arr+'</span></th>';
@@ -145,6 +154,8 @@
       '<span class="chip">'+label+' league: <b>'+pct(lg.win_by_2_pct)+'</b> of wins by 2+</span>'+
       '<span class="chip"><b>'+pct(lg.needed_eng_pct)+'</b> of those needed an empty-netter</span>'+
       '<span class="chip"><b>'+pct(lg.otso_win_pct)+'</b> of wins came in OT/SO</span>';
+    var pn = document.getElementById('plnote');
+    if (pn) pn.textContent = (state.season === 'previous' && state.data.previous_prices) ? 'P/L: 1 unit every game at DraftKings closing prices. Past results, not a prediction' : '';
     var r = rows().filter(function(x){ return !state.q || (x.name + ' ' + x.team).toLowerCase().indexOf(state.q) > -1; });
     r.sort(function(a,b){
       var k = state.sort, av = a[k], bv = b[k];
@@ -153,11 +164,12 @@
       if (av == null) return 1; if (bv == null) return -1;
       return state.dir * (av - bv);
     });
+    document.querySelector('table').classList.toggle('prices', cols().length > COLS.length);
     renderHead();
     var body = document.getElementById('body');
     if (!r.length) { body.innerHTML = '<tr><td colspan="9" class="state">No team matches that search.</td></tr>'; return post(); }
     body.innerHTML = r.map(function(x){
-      return '<tr>' + COLS.map(function(c){
+      return '<tr>' + cols().map(function(c){
         var v = x[c.k], cls = c.cls ? ' class="'+c.cls+'"' : '';
         if (c.type === 'text') return '<td'+cls+' title="'+esc(x.name)+'"><span class="nm">'+esc(x.name)+'</span><span class="abbr">'+esc(x.team)+'</span></td>';
         if (c.type === 'tier') return '<td'+cls+'><span class="pill '+x.tier+'">'+x.tier+'</span></td>';
@@ -166,6 +178,7 @@
           var w = v == null ? 0 : Math.max(0, Math.min(1, v)) * 100, a = (lg[c.lg] || 0) * 100;
           return '<td'+cls+'><span class="meter"><span>'+pct(v)+'</span><span class="bar" aria-hidden="true"><i style="width:'+w+'%"></i><u style="left:calc('+a+'% - 1px)"></u></span></span></td>';
         }
+        if (c.type === 'units') return '<td'+cls+'><span class="'+(v == null ? '' : v >= 0 ? 'pos' : 'neg')+'">'+(v == null ? '–' : (v >= 0 ? '+' : '') + v.toFixed(1) + 'u')+'</span></td>';
         return '<td'+cls+'>'+pct(v)+'</td>';
       }).join('') + '</tr>';
     }).join('');

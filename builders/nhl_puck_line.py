@@ -23,8 +23,8 @@ OUT = os.path.join(ROOT, "site", "nhl", "puck-line")
 API = "https://api-web.nhle.com/v1"
 OVERLAP_DAYS = 7          # re-fetch the last week each run so stat corrections are picked up
 TIER_PRIOR_WINS = 20      # how many "last season wins" the tier blends in (keeps tiers stable early season)
-TIER_FRIENDLY = 0.62      # blended won-by-2+ rate at or above this = "Puck line friendly"
-TIER_RISKY = 0.50         # below this = "Puck line risky"
+TIER_FRIENDLY = 0.62      # blended won-by-2+ rate at or above this = "Wide" (wins by 2+ often)
+TIER_RISKY = 0.50         # below this = "Tight" (wins tend to be close)
 FIELDS = ["season", "date", "game_id", "team", "opp", "home", "gf", "ga", "eng", "last_period"]
 
 def get(url, tries=3):
@@ -113,7 +113,7 @@ def profile(rows):
 def tier(cur, prev):
     prior = prev["win_by_2_pct"] if prev and prev["win_by_2_pct"] is not None else 0.568
     blended = (cur["won_by_2"] + TIER_PRIOR_WINS * prior) / (cur["wins"] + TIER_PRIOR_WINS)
-    label = "Friendly" if blended >= TIER_FRIENDLY else ("Risky" if blended < TIER_RISKY else "Neutral")
+    label = "Wide" if blended >= TIER_FRIENDLY else ("Tight" if blended < TIER_RISKY else "Average")
     return label, round(blended, 4)
 
 def team_names():
@@ -128,6 +128,9 @@ def main():
     prev_rows = refresh(prev_s, False)
     cur_rows = refresh(cur_s, True)
     names = team_names()
+    # Fixed closing-price results for the finished season (built once from historical odds, see builders/README)
+    pf = os.path.join(DATA, f"puck_line_prices_{prev_s['id']}.json")
+    prices = json.load(open(pf)) if os.path.exists(pf) else {}
     league_prev, league_cur = profile(prev_rows), profile(cur_rows)
     teams = sorted({r["team"] for r in prev_rows} | {r["team"] for r in cur_rows})
     out = []
@@ -135,13 +138,15 @@ def main():
         p = profile([r for r in prev_rows if r["team"] == t]) if any(r["team"] == t for r in prev_rows) else None
         c = profile([r for r in cur_rows if r["team"] == t])
         lab, blended = tier(c, p)
-        out.append(dict(team=t, name=names.get(t, t), current=c, previous=p, tier=lab, tier_score=blended))
+        out.append(dict(team=t, name=names.get(t, t), current=c, previous=p, tier=lab, tier_score=blended,
+                        previous_prices=prices.get("teams", {}).get(t)))
     data_through = max((r["date"] for r in cur_rows), default=None)
     fmt = lambda s: f"{str(s['id'])[:4]}-{str(s['id'])[6:]}"
     payload = dict(resource="NHL Puck Line Profile", updated_utc=dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
                    data_through=data_through, current_season=fmt(cur_s), previous_season=fmt(prev_s),
                    league=dict(current=league_cur, previous=league_prev),
                    tier_rules=dict(prior_wins=TIER_PRIOR_WINS, friendly=TIER_FRIENDLY, risky=TIER_RISKY),
+                   previous_prices=prices.get("league"), prices_source=prices.get("source"),
                    source="NHL (api-web.nhle.com)", teams=out)
     os.makedirs(OUT, exist_ok=True)
     with open(os.path.join(OUT, "data.json"), "w") as f:

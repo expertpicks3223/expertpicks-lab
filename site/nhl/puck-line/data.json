@@ -1,6 +1,6 @@
 {
  "resource": "NHL Puck Line Profile",
- "updated_utc": "2026-11-02T10:55Z",
+ "updated_utc": "2026-11-02T12:35Z",
  "data_through": "2026-11-01",
  "current_season": "2026-27",
  "previous_season": "2025-26",
@@ -31,6 +31,63 @@
   "friendly": 0.62,
   "risky": 0.5
  },
+ "previous_prices": {
+  "all ML": {
+   "bets": 2382,
+   "hit": 0.5,
+   "units": -99.3,
+   "roi": -0.0417
+  },
+  "all PL+1.5": {
+   "bets": 2332,
+   "hit": 0.7183,
+   "units": -51.8,
+   "roi": -0.0222
+  },
+  "all PL-1.5": {
+   "bets": 2333,
+   "hit": 0.282,
+   "units": -322.1,
+   "roi": -0.1381
+  },
+  "dog ML": {
+   "bets": 1191,
+   "hit": 0.4492,
+   "units": 11.4,
+   "roi": 0.0096
+  },
+  "dog PL+1.5": {
+   "bets": 1156,
+   "hit": 0.6696,
+   "units": -0.6,
+   "roi": -0.0005
+  },
+  "dog PL-1.5": {
+   "bets": 1176,
+   "hit": 0.2338,
+   "units": -150.9,
+   "roi": -0.1284
+  },
+  "fav ML": {
+   "bets": 1191,
+   "hit": 0.5508,
+   "units": -110.7,
+   "roi": -0.0929
+  },
+  "fav PL+1.5": {
+   "bets": 1176,
+   "hit": 0.7662,
+   "units": -51.2,
+   "roi": -0.0435
+  },
+  "fav PL-1.5": {
+   "bets": 1157,
+   "hit": 0.331,
+   "units": -171.2,
+   "roi": -0.148
+  }
+ },
+ "prices_source": "DraftKings closing prices via OpticOdds historical odds. 1 unit per bet, main or alternate line at -1.5/+1.5. Built once, 2025-26 regular season.",
  "source": "NHL (api-web.nhle.com)",
  "teams": [
   {
@@ -56,8 +113,25 @@
     "cover_minus_15_pct": 0.2317,
     "cover_plus_15_pct": 0.6707
    },
-   "tier": "Risky",
-   "tier_score": 0.4553
+   "tier": "Tight",
+   "tier_score": 0.4553,
+   "previous_prices": {
+    "minus": {
+     "bets": 75,
+     "hit": 0.24,
+     "units": -17.6
+    },
+    "plus": {
+     "bets": 76,
+     "hit": 0.684,
+     "units": -4.2
+    },
+    "ml": {
+     "bets": 77,
+     "hit": 0.532,
+     "units": 4.2
+    }
+   }
   },
   {
    "team": "BOS",
@@ -82,8 +156,25 @@
     "cover_minus_15_pct": 0.3049,
     "cover_plus_15_pct": 0.7683
    },
-   "tier": "Friendly",
-   "tier_score": 0.6371
+   "tier": "Wide",
+   "tier_score": 0.6371,
+   "previous_prices": {
+    "minus": {
+     "bets": 72,
+     "hit": 0.306,
+     "units": 1.0
+    },
+    "plus": {
+     "bets": 68,
+     "hit": 0.765,
+     "units": 7.6
+    },
+    "ml": {
+     "bets": 73,
+     "hit": 0.548,
+     "units": 11.1
+    }
+   }
   },
   {
    "team": "BUF",
@@ -108,8 +199,25 @@
     "cover_minus_15_pct": 0.4268,
     "cover_plus_15_pct": 0.7561
    },
-   "tier": "Neutral",
-   "tier_score": 0.5926
+   "tier": "Average",
+   "tier_score": 0.5926,
+   "previous_prices": {
+    "minus": {
+     "bets": 66,
+     "hit": 0.455,
+     "units": 29.4
+    },
+    "plus": {
+     "bets": 64,
+     "hit": 0.797,
+     "units": 6.2
+    },
+    "ml": {
+     "bets": 66,
+     "hit": 0.621,
+     "units": 13.9
+    }
+   }
   },
   {
    "team": "CAR",
@@ -134,8 +242,25 @@
     "cover_minus_15_pct": 0.3537,
     "cover_plus_15_pct": 0.7805
    },
-   "tier": "Neutral",
-   "tier_score": 0.592
+   "tier": "Average",
+   "tier_score": 0.592,
+   "previous_prices": {
+    "minus": {
+     "bets": 72,
+     "hit": 0.361,
+     "units": -8.2
+    },
+    "plus": {
+     "bets": 74,
+     "hit": 0.757,
+     "units": -4.9
+    },
+    "ml": {
+     "bets": 75,
+     "hit": 0.653,
+     "units": 3.3
+    }
+   }
   },
   {
    "team": "CBJ",
@@ -160,8 +285,25 @@
     "cover_minus_15_pct": 0.2683,
     "cover_plus_15_pct": 0.7927
    },
-   "tier": "Risky",
-   "tier_score": 0.48
+   "tier": "Tight",
+   "tier_score": 0.48,
+   "previous_prices": {
+    "minus": {
+     "bets": 69,
+     "hit": 0.232,
+     "units": -16.7
+    },
+    "plus": {
+     "bets": 69,
+     "hit": 0.754,
+     "units": 2.2
+    },
+    "ml": {
+     "bets": 71,
+     "hit": 0.465,
+     "units": -6.4
+    }
+   }
   },
   {
    "team": "CGY",
@@ -186,8 +328,25 @@
     "cover_minus_15_pct": 0.2439,
     "cover_plus_15_pct": 0.5976
    },
-   "tier": "Neutral",
-   "tier_score": 0.6063
+   "tier": "Average",
+   "tier_score": 0.6063,
+   "previous_prices": {
+    "minus": {
+     "bets": 69,
+     "hit": 0.217,
+     "units": -19.6
+    },
+    "plus": {
+     "bets": 69,
+     "hit": 0.594,
+     "units": -9.6
+    },
+    "ml": {
+     "bets": 73,
+     "hit": 0.397,
+     "units": -11.0
+    }
+   }
   },
   {
    "team": "CHI",
@@ -212,8 +371,25 @@
     "cover_minus_15_pct": 0.1951,
     "cover_plus_15_pct": 0.622
    },
-   "tier": "Neutral",
-   "tier_score": 0.5431
+   "tier": "Average",
+   "tier_score": 0.5431,
+   "previous_prices": {
+    "minus": {
+     "bets": 74,
+     "hit": 0.203,
+     "units": -13.9
+    },
+    "plus": {
+     "bets": 73,
+     "hit": 0.644,
+     "units": 1.3
+    },
+    "ml": {
+     "bets": 76,
+     "hit": 0.368,
+     "units": -6.4
+    }
+   }
   },
   {
    "team": "COL",
@@ -238,8 +414,25 @@
     "cover_minus_15_pct": 0.5,
     "cover_plus_15_pct": 0.8537
    },
-   "tier": "Friendly",
-   "tier_score": 0.7825
+   "tier": "Wide",
+   "tier_score": 0.7825,
+   "previous_prices": {
+    "minus": {
+     "bets": 75,
+     "hit": 0.507,
+     "units": 10.1
+    },
+    "plus": {
+     "bets": 76,
+     "hit": 0.855,
+     "units": 2.2
+    },
+    "ml": {
+     "bets": 76,
+     "hit": 0.658,
+     "units": -0.6
+    }
+   }
   },
   {
    "team": "DAL",
@@ -264,8 +457,25 @@
     "cover_minus_15_pct": 0.2683,
     "cover_plus_15_pct": 0.8293
    },
-   "tier": "Risky",
-   "tier_score": 0.4929
+   "tier": "Tight",
+   "tier_score": 0.4929,
+   "previous_prices": {
+    "minus": {
+     "bets": 72,
+     "hit": 0.278,
+     "units": -19.0
+    },
+    "plus": {
+     "bets": 73,
+     "hit": 0.836,
+     "units": 4.7
+    },
+    "ml": {
+     "bets": 73,
+     "hit": 0.644,
+     "units": 7.2
+    }
+   }
   },
   {
    "team": "DET",
@@ -290,8 +500,25 @@
     "cover_minus_15_pct": 0.2805,
     "cover_plus_15_pct": 0.6829
    },
-   "tier": "Neutral",
-   "tier_score": 0.5469
+   "tier": "Average",
+   "tier_score": 0.5469,
+   "previous_prices": {
+    "minus": {
+     "bets": 75,
+     "hit": 0.267,
+     "units": -10.4
+    },
+    "plus": {
+     "bets": 76,
+     "hit": 0.671,
+     "units": -5.7
+    },
+    "ml": {
+     "bets": 76,
+     "hit": 0.5,
+     "units": -2.1
+    }
+   }
   },
   {
    "team": "EDM",
@@ -316,8 +543,25 @@
     "cover_minus_15_pct": 0.3415,
     "cover_plus_15_pct": 0.7683
    },
-   "tier": "Friendly",
-   "tier_score": 0.7309
+   "tier": "Wide",
+   "tier_score": 0.7309,
+   "previous_prices": {
+    "minus": {
+     "bets": 71,
+     "hit": 0.352,
+     "units": -6.4
+    },
+    "plus": {
+     "bets": 72,
+     "hit": 0.806,
+     "units": 2.3
+    },
+    "ml": {
+     "bets": 72,
+     "hit": 0.5,
+     "units": -10.9
+    }
+   }
   },
   {
    "team": "FLA",
@@ -342,8 +586,25 @@
     "cover_minus_15_pct": 0.2317,
     "cover_plus_15_pct": 0.6098
    },
-   "tier": "Risky",
-   "tier_score": 0.4821
+   "tier": "Tight",
+   "tier_score": 0.4821,
+   "previous_prices": {
+    "minus": {
+     "bets": 67,
+     "hit": 0.209,
+     "units": -23.0
+    },
+    "plus": {
+     "bets": 71,
+     "hit": 0.62,
+     "units": -12.4
+    },
+    "ml": {
+     "bets": 71,
+     "hit": 0.493,
+     "units": -5.6
+    }
+   }
   },
   {
    "team": "LAK",
@@ -368,8 +629,25 @@
     "cover_minus_15_pct": 0.1707,
     "cover_plus_15_pct": 0.7439
    },
-   "tier": "Risky",
-   "tier_score": 0.4167
+   "tier": "Tight",
+   "tier_score": 0.4167,
+   "previous_prices": {
+    "minus": {
+     "bets": 73,
+     "hit": 0.192,
+     "units": -34.0
+    },
+    "plus": {
+     "bets": 74,
+     "hit": 0.757,
+     "units": -1.1
+    },
+    "ml": {
+     "bets": 75,
+     "hit": 0.453,
+     "units": -12.9
+    }
+   }
   },
   {
    "team": "MIN",
@@ -394,8 +672,25 @@
     "cover_minus_15_pct": 0.3171,
     "cover_plus_15_pct": 0.7683
    },
-   "tier": "Friendly",
-   "tier_score": 0.6435
+   "tier": "Wide",
+   "tier_score": 0.6435,
+   "previous_prices": {
+    "minus": {
+     "bets": 72,
+     "hit": 0.319,
+     "units": -1.1
+    },
+    "plus": {
+     "bets": 71,
+     "hit": 0.746,
+     "units": -0.3
+    },
+    "ml": {
+     "bets": 73,
+     "hit": 0.534,
+     "units": 0.9
+    }
+   }
   },
   {
    "team": "MTL",
@@ -420,8 +715,25 @@
     "cover_minus_15_pct": 0.3049,
     "cover_plus_15_pct": 0.7805
    },
-   "tier": "Risky",
-   "tier_score": 0.4626
+   "tier": "Tight",
+   "tier_score": 0.4626,
+   "previous_prices": {
+    "minus": {
+     "bets": 74,
+     "hit": 0.311,
+     "units": -1.5
+    },
+    "plus": {
+     "bets": 75,
+     "hit": 0.787,
+     "units": 5.7
+    },
+    "ml": {
+     "bets": 77,
+     "hit": 0.597,
+     "units": 11.4
+    }
+   }
   },
   {
    "team": "NJD",
@@ -446,8 +758,25 @@
     "cover_minus_15_pct": 0.2683,
     "cover_plus_15_pct": 0.6463
    },
-   "tier": "Neutral",
-   "tier_score": 0.5681
+   "tier": "Average",
+   "tier_score": 0.5681,
+   "previous_prices": {
+    "minus": {
+     "bets": 74,
+     "hit": 0.243,
+     "units": -17.5
+    },
+    "plus": {
+     "bets": 74,
+     "hit": 0.635,
+     "units": -10.9
+    },
+    "ml": {
+     "bets": 74,
+     "hit": 0.5,
+     "units": -3.6
+    }
+   }
   },
   {
    "team": "NSH",
@@ -472,8 +801,25 @@
     "cover_minus_15_pct": 0.2195,
     "cover_plus_15_pct": 0.6829
    },
-   "tier": "Risky",
-   "tier_score": 0.499
+   "tier": "Tight",
+   "tier_score": 0.499,
+   "previous_prices": {
+    "minus": {
+     "bets": 72,
+     "hit": 0.167,
+     "units": -30.4
+    },
+    "plus": {
+     "bets": 72,
+     "hit": 0.639,
+     "units": -6.7
+    },
+    "ml": {
+     "bets": 72,
+     "hit": 0.431,
+     "units": -7.5
+    }
+   }
   },
   {
    "team": "NYI",
@@ -498,8 +844,25 @@
     "cover_minus_15_pct": 0.1951,
     "cover_plus_15_pct": 0.7195
    },
-   "tier": "Risky",
-   "tier_score": 0.3867
+   "tier": "Tight",
+   "tier_score": 0.3867,
+   "previous_prices": {
+    "minus": {
+     "bets": 76,
+     "hit": 0.211,
+     "units": -24.3
+    },
+    "plus": {
+     "bets": 77,
+     "hit": 0.727,
+     "units": -0.0
+    },
+    "ml": {
+     "bets": 79,
+     "hit": 0.544,
+     "units": 6.8
+    }
+   }
   },
   {
    "team": "NYR",
@@ -524,8 +887,25 @@
     "cover_minus_15_pct": 0.2805,
     "cover_plus_15_pct": 0.6707
    },
-   "tier": "Friendly",
-   "tier_score": 0.7604
+   "tier": "Wide",
+   "tier_score": 0.7604,
+   "previous_prices": {
+    "minus": {
+     "bets": 73,
+     "hit": 0.301,
+     "units": -0.8
+    },
+    "plus": {
+     "bets": 73,
+     "hit": 0.658,
+     "units": -6.8
+    },
+    "ml": {
+     "bets": 74,
+     "hit": 0.432,
+     "units": -11.1
+    }
+   }
   },
   {
    "team": "OTT",
@@ -550,8 +930,25 @@
     "cover_minus_15_pct": 0.3415,
     "cover_plus_15_pct": 0.7927
    },
-   "tier": "Neutral",
-   "tier_score": 0.6113
+   "tier": "Average",
+   "tier_score": 0.6113,
+   "previous_prices": {
+    "minus": {
+     "bets": 75,
+     "hit": 0.333,
+     "units": -6.6
+    },
+    "plus": {
+     "bets": 76,
+     "hit": 0.803,
+     "units": 3.6
+    },
+    "ml": {
+     "bets": 77,
+     "hit": 0.545,
+     "units": -3.1
+    }
+   }
   },
   {
    "team": "PHI",
@@ -576,8 +973,25 @@
     "cover_minus_15_pct": 0.3171,
     "cover_plus_15_pct": 0.7317
    },
-   "tier": "Friendly",
-   "tier_score": 0.6289
+   "tier": "Wide",
+   "tier_score": 0.6289,
+   "previous_prices": {
+    "minus": {
+     "bets": 75,
+     "hit": 0.333,
+     "units": 10.4
+    },
+    "plus": {
+     "bets": 71,
+     "hit": 0.746,
+     "units": 4.8
+    },
+    "ml": {
+     "bets": 76,
+     "hit": 0.539,
+     "units": 8.2
+    }
+   }
   },
   {
    "team": "PIT",
@@ -602,8 +1016,25 @@
     "cover_minus_15_pct": 0.3537,
     "cover_plus_15_pct": 0.7805
    },
-   "tier": "Friendly",
-   "tier_score": 0.6458
+   "tier": "Wide",
+   "tier_score": 0.6458,
+   "previous_prices": {
+    "minus": {
+     "bets": 77,
+     "hit": 0.364,
+     "units": 17.1
+    },
+    "plus": {
+     "bets": 76,
+     "hit": 0.789,
+     "units": 8.0
+    },
+    "ml": {
+     "bets": 78,
+     "hit": 0.5,
+     "units": 0.8
+    }
+   }
   },
   {
    "team": "SEA",
@@ -628,8 +1059,25 @@
     "cover_minus_15_pct": 0.2561,
     "cover_plus_15_pct": 0.6098
    },
-   "tier": "Neutral",
-   "tier_score": 0.6197
+   "tier": "Average",
+   "tier_score": 0.6197,
+   "previous_prices": {
+    "minus": {
+     "bets": 78,
+     "hit": 0.269,
+     "units": -7.2
+    },
+    "plus": {
+     "bets": 75,
+     "hit": 0.627,
+     "units": -6.3
+    },
+    "ml": {
+     "bets": 79,
+     "hit": 0.43,
+     "units": -4.7
+    }
+   }
   },
   {
    "team": "SJS",
@@ -654,8 +1102,25 @@
     "cover_minus_15_pct": 0.2073,
     "cover_plus_15_pct": 0.6341
    },
-   "tier": "Risky",
-   "tier_score": 0.3599
+   "tier": "Tight",
+   "tier_score": 0.3599,
+   "previous_prices": {
+    "minus": {
+     "bets": 69,
+     "hit": 0.203,
+     "units": -14.9
+    },
+    "plus": {
+     "bets": 68,
+     "hit": 0.618,
+     "units": -3.1
+    },
+    "ml": {
+     "bets": 71,
+     "hit": 0.465,
+     "units": 7.8
+    }
+   }
   },
   {
    "team": "STL",
@@ -680,8 +1145,25 @@
     "cover_minus_15_pct": 0.2317,
     "cover_plus_15_pct": 0.7073
    },
-   "tier": "Neutral",
-   "tier_score": 0.5656
+   "tier": "Average",
+   "tier_score": 0.5656,
+   "previous_prices": {
+    "minus": {
+     "bets": 74,
+     "hit": 0.243,
+     "units": -10.0
+    },
+    "plus": {
+     "bets": 74,
+     "hit": 0.716,
+     "units": 1.4
+    },
+    "ml": {
+     "bets": 75,
+     "hit": 0.48,
+     "units": 1.1
+    }
+   }
   },
   {
    "team": "TBL",
@@ -706,8 +1188,25 @@
     "cover_minus_15_pct": 0.4268,
     "cover_plus_15_pct": 0.8049
    },
-   "tier": "Friendly",
-   "tier_score": 0.7143
+   "tier": "Wide",
+   "tier_score": 0.7143,
+   "previous_prices": {
+    "minus": {
+     "bets": 71,
+     "hit": 0.423,
+     "units": 8.8
+    },
+    "plus": {
+     "bets": 71,
+     "hit": 0.831,
+     "units": 3.0
+    },
+    "ml": {
+     "bets": 72,
+     "hit": 0.611,
+     "units": 0.7
+    }
+   }
   },
   {
    "team": "TOR",
@@ -732,8 +1231,25 @@
     "cover_minus_15_pct": 0.2195,
     "cover_plus_15_pct": 0.6098
    },
-   "tier": "Neutral",
-   "tier_score": 0.5804
+   "tier": "Average",
+   "tier_score": 0.5804,
+   "previous_prices": {
+    "minus": {
+     "bets": 74,
+     "hit": 0.216,
+     "units": -20.5
+    },
+    "plus": {
+     "bets": 75,
+     "hit": 0.6,
+     "units": -12.7
+    },
+    "ml": {
+     "bets": 76,
+     "hit": 0.368,
+     "units": -20.8
+    }
+   }
   },
   {
    "team": "UTA",
@@ -758,8 +1274,25 @@
     "cover_minus_15_pct": 0.3293,
     "cover_plus_15_pct": 0.7317
    },
-   "tier": "Neutral",
-   "tier_score": 0.6054
+   "tier": "Average",
+   "tier_score": 0.6054,
+   "previous_prices": {
+    "minus": {
+     "bets": 73,
+     "hit": 0.301,
+     "units": -13.8
+    },
+    "plus": {
+     "bets": 74,
+     "hit": 0.73,
+     "units": -3.8
+    },
+    "ml": {
+     "bets": 75,
+     "hit": 0.493,
+     "units": -10.0
+    }
+   }
   },
   {
    "team": "VAN",
@@ -784,8 +1317,25 @@
     "cover_minus_15_pct": 0.122,
     "cover_plus_15_pct": 0.5122
    },
-   "tier": "Risky",
-   "tier_score": 0.3913
+   "tier": "Tight",
+   "tier_score": 0.3913,
+   "previous_prices": {
+    "minus": {
+     "bets": 78,
+     "hit": 0.128,
+     "units": -37.8
+    },
+    "plus": {
+     "bets": 76,
+     "hit": 0.513,
+     "units": -16.1
+    },
+    "ml": {
+     "bets": 79,
+     "hit": 0.316,
+     "units": -21.2
+    }
+   }
   },
   {
    "team": "VGK",
@@ -810,8 +1360,25 @@
     "cover_minus_15_pct": 0.2805,
     "cover_plus_15_pct": 0.8049
    },
-   "tier": "Neutral",
-   "tier_score": 0.6136
+   "tier": "Average",
+   "tier_score": 0.6136,
+   "previous_prices": {
+    "minus": {
+     "bets": 71,
+     "hit": 0.254,
+     "units": -24.2
+    },
+    "plus": {
+     "bets": 73,
+     "hit": 0.849,
+     "units": 5.4
+    },
+    "ml": {
+     "bets": 73,
+     "hit": 0.479,
+     "units": -14.7
+    }
+   }
   },
   {
    "team": "WPG",
@@ -836,8 +1403,25 @@
     "cover_minus_15_pct": 0.2317,
     "cover_plus_15_pct": 0.7195
    },
-   "tier": "Risky",
-   "tier_score": 0.4941
+   "tier": "Tight",
+   "tier_score": 0.4941,
+   "previous_prices": {
+    "minus": {
+     "bets": 72,
+     "hit": 0.222,
+     "units": -24.0
+    },
+    "plus": {
+     "bets": 71,
+     "hit": 0.704,
+     "units": -3.6
+    },
+    "ml": {
+     "bets": 73,
+     "hit": 0.411,
+     "units": -18.5
+    }
+   }
   },
   {
    "team": "WSH",
@@ -862,8 +1446,25 @@
     "cover_minus_15_pct": 0.3659,
     "cover_plus_15_pct": 0.7317
    },
-   "tier": "Friendly",
-   "tier_score": 0.6769
+   "tier": "Wide",
+   "tier_score": 0.6769,
+   "previous_prices": {
+    "minus": {
+     "bets": 75,
+     "hit": 0.373,
+     "units": 4.5
+    },
+    "plus": {
+     "bets": 75,
+     "hit": 0.733,
+     "units": -2.1
+    },
+    "ml": {
+     "bets": 75,
+     "hit": 0.507,
+     "units": -5.8
+    }
+   }
   }
  ]
 }
