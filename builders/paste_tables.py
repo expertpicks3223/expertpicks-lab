@@ -18,7 +18,9 @@ def pct(v):
 
 
 def units(v):
-    return "-" if v is None else f"{v:+.1f}u"
+    if v is None:
+        return "-"
+    return "0.0u" if abs(v) < 0.05 else f"{v:+.1f}u"
 
 
 def label(rate):
@@ -43,7 +45,7 @@ def build(d, which):
     for t in d["teams"]:
         s = t[which]
         lab = label(s["win_by_2_pct"]) if prev else t["tier"]
-        r = [t["name"], lab, str(s["wins"]), pct(s["win_by_2_pct"]), pct(s["needed_eng_pct"]),
+        r = [t["name"], lab, str(s["wins"]) + ("*" if (not prev and s["wins"] < 10) else ""), pct(s["win_by_2_pct"]), pct(s["needed_eng_pct"]),
              pct(s["otso_win_pct"]), pct(s["cover_minus_15_pct"]), pct(s["cover_plus_15_pct"])]
         if prev:
             p = t.get("previous_prices") or {}
@@ -56,15 +58,19 @@ def build(d, which):
     if prev:
         note += " P/L = 1 unit on that team every game at DraftKings closing prices. Past results, not a prediction."
     else:
-        note += f" Margin blends this season with last. Games through {d['data_through']}."
-    html = ['<table style="width:100%;border-collapse:collapse;font-size:14px">',
+        note += f" Margin blends this season with last. * Fewer than 10 wins, small sample. Games through {d['data_through']}."
+    html = ['<div style="overflow-x:auto;-webkit-overflow-scrolling:touch">',
+            '<table style="width:100%;min-width:680px;border-collapse:collapse;font-size:14px">',
             f"<caption style=\"text-align:left;font-weight:700;padding:0 0 6px\">NHL puck line profile, {season}</caption>",
             "<thead><tr>" + "".join(f"<th {TH if i < 2 else THR}>{h}</th>" for i, h in enumerate(heads)) + "</tr></thead><tbody>"]
     for _, r in rows:
         html.append("<tr>" + "".join(f"<td {TD if i < 2 else TDR}>{c}</td>" for i, c in enumerate(r)) + "</tr>")
-    html.append("</tbody></table>")
+    lr = ["League average", "", "", pct(lg["win_by_2_pct"]), pct(lg["needed_eng_pct"]), pct(lg["otso_win_pct"]),
+          pct(lg["cover_minus_15_pct"]), pct(lg["cover_plus_15_pct"])] + (["", ""] if prev else [])
+    html.append("<tr>" + "".join(f"<td {TD if i < 2 else TDR}><strong>{c}</strong></td>" for i, c in enumerate(lr)) + "</tr>")
+    html.append("</tbody></table></div>")
     html.append(f'<p style="font-size:12px;color:#5b6573">{note} Source: NHL, ExpertPicks Lab.</p>')
-    tsv = "\n".join(["\t".join(heads)] + ["\t".join(r) for _, r in rows]) + "\n"
+    tsv = "\n".join(["\t".join(heads)] + ["\t".join(r) for _, r in rows] + ["\t".join(lr)]) + "\n"
     return "\n".join(html) + "\n", tsv
 
 
