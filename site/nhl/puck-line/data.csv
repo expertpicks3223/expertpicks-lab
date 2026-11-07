@@ -4,16 +4,16 @@ New York Rangers,Wide,9,88.9,50.0,0.0,47.1,64.7,67.7
 Tampa Bay Lightning,Wide,10,80.0,50.0,10.0,53.3,80.0,70.0
 Edmonton Oilers,Wide,11,81.8,11.1,18.2,52.9,88.2,68.3
 Washington Capitals,Wide,8,62.5,20.0,12.5,35.7,64.3,69.8
-Minnesota Wild,Wide,11,81.8,22.2,0.0,52.9,94.1,56.5
+Minnesota Wild,Wide,12,83.3,20.0,0.0,55.6,94.4,56.5
 Pittsburgh Penguins,Wide,5,40.0,0.0,60.0,12.5,68.8,70.7
 Philadelphia Flyers,Wide,4,75.0,33.3,0.0,16.7,66.7,60.5
 Boston Bruins,Wide,12,75.0,22.2,25.0,52.9,82.3,55.6
+Buffalo Sabres,Average,8,37.5,33.3,25.0,18.8,75.0,70.0
 Carolina Hurricanes,Average,13,69.2,33.3,7.7,50.0,88.9,54.7
 Seattle Kraken,Average,9,55.6,20.0,33.3,33.3,66.7,61.8
-Buffalo Sabres,Average,7,28.6,50.0,28.6,13.3,73.3,70.0
 Ottawa Senators,Average,10,50.0,20.0,20.0,29.4,64.7,63.6
 Utah Mammoth,Average,10,50.0,20.0,20.0,29.4,64.7,62.8
-Calgary Flames,Average,7,57.1,50.0,0.0,25.0,50.0,58.8
+Calgary Flames,Average,7,57.1,50.0,0.0,23.5,47.1,58.8
 Toronto Maple Leafs,Average,8,62.5,40.0,12.5,29.4,88.2,56.2
 Vegas Golden Knights,Average,11,54.5,16.7,18.2,33.3,77.8,59.0
 St. Louis Blues,Average,7,71.4,20.0,0.0,31.2,62.5,51.3
@@ -23,11 +23,11 @@ New Jersey Devils,Average,11,54.5,16.7,36.4,37.5,68.8,52.4
 Florida Panthers,Average,9,55.6,20.0,22.2,31.2,68.8,47.5
 Nashville Predators,Tight,7,57.1,25.0,28.6,25.0,81.2,47.4
 Winnipeg Jets,Tight,6,33.3,0.0,16.7,11.8,70.6,54.3
-Columbus Blue Jackets,Tight,7,28.6,0.0,71.4,14.3,64.3,55.0
+Columbus Blue Jackets,Tight,7,28.6,0.0,71.4,13.3,60.0,55.0
 Dallas Stars,Tight,9,55.6,20.0,33.3,31.2,81.2,44.0
 Montréal Canadiens,Tight,10,30.0,0.0,40.0,18.8,87.5,52.1
+Anaheim Ducks,Tight,9,44.4,25.0,11.1,23.5,70.6,44.2
 Los Angeles Kings,Tight,5,60.0,0.0,40.0,21.4,71.4,40.0
-Anaheim Ducks,Tight,8,37.5,0.0,12.5,18.8,68.8,44.2
 Vancouver Canucks,Tight,3,33.3,0.0,66.7,5.6,44.4,40.0
 New York Islanders,Tight,7,42.9,0.0,28.6,20.0,66.7,37.2
-San Jose Sharks,Tight,7,14.3,0.0,71.4,5.9,52.9,43.6
+San Jose Sharks,Tight,7,14.3,0.0,71.4,5.6,50.0,43.6
