@@ -82,7 +82,7 @@ def main():
         d = json.load(f)
     for which, name in (("current", "current"), ("previous", "previous")):
         html, tsv = build(d, which)
-        open(os.path.join(OUT, f"paste-{name}.html"), "w").write(html)
+        open(os.path.join(OUT, f"paste-{name}.html"), "w").write(html.replace("\n", "").strip())  # one line: pastes cleanly into CMS HTML fields
         open(os.path.join(OUT, f"paste-{name}.tsv"), "w").write(tsv)
     print("wrote paste tables")
 
