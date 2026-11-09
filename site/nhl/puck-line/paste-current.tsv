@@ -1,34 +1,34 @@
-Team	Margin	Wins	Won by 2+	Needed ENG	OT/SO wins	-1.5 cover	+1.5 cover
-Colorado Avalanche	Wide	10	90.0%	0.0%	0.0%	50.0%	83.3%
-Edmonton Oilers	Wide	12	83.3%	20.0%	16.7%	55.6%	88.9%
-Minnesota Wild	Wide	12	83.3%	20.0%	0.0%	52.6%	94.7%
-New York Rangers	Wide	10	80.0%	50.0%	0.0%	44.4%	66.7%
-Boston Bruins	Wide	12	75.0%	22.2%	25.0%	52.9%	82.3%
-Philadelphia Flyers	Wide	4*	75.0%	33.3%	0.0%	16.7%	66.7%
-Tampa Bay Lightning	Wide	11	72.7%	50.0%	18.2%	50.0%	81.2%
-Carolina Hurricanes	Average	14	71.4%	30.0%	7.1%	52.6%	89.5%
-St. Louis Blues	Average	7*	71.4%	20.0%	0.0%	29.4%	58.8%
-Nashville Predators	Average	8*	62.5%	40.0%	25.0%	29.4%	82.3%
-Toronto Maple Leafs	Average	8*	62.5%	40.0%	12.5%	27.8%	83.3%
-Los Angeles Kings	Tight	5*	60.0%	0.0%	40.0%	20.0%	66.7%
-Calgary Flames	Average	7*	57.1%	50.0%	0.0%	23.5%	47.1%
-Detroit Red Wings	Average	7*	57.1%	50.0%	28.6%	22.2%	72.2%
-Florida Panthers	Average	9*	55.6%	20.0%	22.2%	29.4%	70.6%
-Seattle Kraken	Average	9*	55.6%	20.0%	33.3%	31.2%	68.8%
-Washington Capitals	Wide	9*	55.6%	20.0%	11.1%	33.3%	66.7%
-Ottawa Senators	Average	11	54.5%	33.3%	18.2%	33.3%	66.7%
-Vegas Golden Knights	Average	11	54.5%	16.7%	18.2%	33.3%	77.8%
-Chicago Blackhawks	Average	4*	50.0%	100.0%	25.0%	11.1%	38.9%
-Dallas Stars	Tight	10	50.0%	20.0%	30.0%	29.4%	82.3%
-New Jersey Devils	Average	12	50.0%	16.7%	41.7%	35.3%	70.6%
-Pittsburgh Penguins	Wide	6*	50.0%	0.0%	50.0%	17.6%	70.6%
-Utah Mammoth	Average	10	50.0%	20.0%	20.0%	27.8%	61.1%
-Anaheim Ducks	Tight	9*	44.4%	25.0%	11.1%	23.5%	70.6%
-New York Islanders	Tight	7*	42.9%	0.0%	28.6%	18.8%	68.8%
-Buffalo Sabres	Average	8*	37.5%	33.3%	25.0%	18.8%	75.0%
-Montréal Canadiens	Tight	11	36.4%	0.0%	36.4%	23.5%	88.2%
-Vancouver Canucks	Tight	3*	33.3%	0.0%	66.7%	5.3%	42.1%
-Winnipeg Jets	Tight	6*	33.3%	0.0%	16.7%	11.8%	70.6%
-Columbus Blue Jackets	Tight	7*	28.6%	0.0%	71.4%	13.3%	60.0%
-San Jose Sharks	Tight	7*	14.3%	0.0%	71.4%	5.3%	52.6%
-League average			58.3%	24.8%	22.1%	29.2%	70.8%
+Team	Margin (blend)	GP	Wins	Won by 2+	Needed ENG	OT/SO wins	-1.5 cover	+1.5 cover
+Colorado Avalanche	Wide	18	10	90.0%	0.0%	0.0%	50.0%	83.3%
+Edmonton Oilers	Wide	18	12	83.3%	20.0%	16.7%	55.6%	88.9%
+Minnesota Wild	Wide	19	12	83.3%	20.0%	0.0%	52.6%	94.7%
+New York Rangers	Wide	18	10	80.0%	50.0%	0.0%	44.4%	66.7%
+Boston Bruins	Wide	18	13	76.9%	20.0%	23.1%	55.6%	83.3%
+Philadelphia Flyers	Wide	19	4*	75.0%	33.3%	0.0%	15.8%	68.4%
+Tampa Bay Lightning	Wide	17	11	72.7%	50.0%	18.2%	47.1%	82.3%
+Carolina Hurricanes	Average	19	14	71.4%	30.0%	7.1%	52.6%	89.5%
+St. Louis Blues	Average	17	7*	71.4%	20.0%	0.0%	29.4%	58.8%
+Nashville Predators	Average	17	8*	62.5%	40.0%	25.0%	29.4%	82.3%
+Toronto Maple Leafs	Average	19	8*	62.5%	40.0%	12.5%	26.3%	79.0%
+Los Angeles Kings	Tight	15	5*	60.0%	0.0%	40.0%	20.0%	66.7%
+Vegas Golden Knights	Average	19	12	58.3%	14.3%	16.7%	36.8%	79.0%
+Detroit Red Wings	Average	18	7*	57.1%	50.0%	28.6%	22.2%	72.2%
+Florida Panthers	Average	18	9*	55.6%	20.0%	22.2%	27.8%	66.7%
+Seattle Kraken	Average	16	9*	55.6%	20.0%	33.3%	31.2%	68.8%
+Washington Capitals	Wide	15	9*	55.6%	20.0%	11.1%	33.3%	66.7%
+Ottawa Senators	Average	18	11	54.5%	33.3%	18.2%	33.3%	66.7%
+New Jersey Devils	Average	18	13	53.8%	14.3%	38.5%	38.9%	72.2%
+Anaheim Ducks	Tight	18	10	50.0%	20.0%	10.0%	27.8%	72.2%
+Calgary Flames	Average	18	8*	50.0%	50.0%	12.5%	22.2%	50.0%
+Chicago Blackhawks	Average	18	4*	50.0%	100.0%	25.0%	11.1%	38.9%
+Dallas Stars	Tight	17	10	50.0%	20.0%	30.0%	29.4%	82.3%
+Pittsburgh Penguins	Wide	18	6*	50.0%	0.0%	50.0%	16.7%	66.7%
+Utah Mammoth	Average	18	10	50.0%	20.0%	20.0%	27.8%	61.1%
+New York Islanders	Tight	16	7*	42.9%	0.0%	28.6%	18.8%	68.8%
+Buffalo Sabres	Average	17	8*	37.5%	33.3%	25.0%	17.6%	70.6%
+Montréal Canadiens	Tight	17	11	36.4%	0.0%	36.4%	23.5%	88.2%
+Vancouver Canucks	Tight	19	3*	33.3%	0.0%	66.7%	5.3%	42.1%
+Columbus Blue Jackets	Tight	15	7*	28.6%	0.0%	71.4%	13.3%	60.0%
+Winnipeg Jets	Tight	18	7*	28.6%	0.0%	14.3%	11.1%	72.2%
+San Jose Sharks	Tight	19	7*	14.3%	0.0%	71.4%	5.3%	52.6%
+League average				58.5%	24.2%	22.0%	29.3%	70.7%

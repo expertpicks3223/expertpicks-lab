@@ -38,14 +38,14 @@ TDR = 'style="text-align:right;padding:6px 8px;border-bottom:1px solid #e3e6ea"'
 def build(d, which):
     prev = which == "previous"
     season = d["previous_season"] if prev else d["current_season"]
-    heads = ["Team", "Margin", "Wins", "Won by 2+", "Needed ENG", "OT/SO wins", "-1.5 cover", "+1.5 cover"]
+    heads = ["Team", "Margin" if prev else "Margin (blend)"] + ([] if prev else ["GP"]) + ["Wins", "Won by 2+", "Needed ENG", "OT/SO wins", "-1.5 cover", "+1.5 cover"]
     if prev:
         heads += ["-1.5 P/L", "+1.5 P/L"]
     rows = []
     for t in d["teams"]:
         s = t[which]
         lab = label(s["win_by_2_pct"]) if prev else t["tier"]
-        r = [t["name"], lab, str(s["wins"]) + ("*" if (not prev and s["wins"] < 10) else ""), pct(s["win_by_2_pct"]), pct(s["needed_eng_pct"]),
+        r = [t["name"], lab] + ([] if prev else [str(s["gp"])]) + [str(s["wins"]) + ("*" if (not prev and s["wins"] < 10) else ""), pct(s["win_by_2_pct"]), pct(s["needed_eng_pct"]),
              pct(s["otso_win_pct"]), pct(s["cover_minus_15_pct"]), pct(s["cover_plus_15_pct"])]
         if prev:
             p = t.get("previous_prices") or {}
@@ -58,14 +58,17 @@ def build(d, which):
     if prev:
         note += " P/L = 1 unit on that team every game at DraftKings closing prices. Past results, not a prediction."
     else:
-        note += f" Margin blends this season with last. * Fewer than 10 wins, small sample. Games through {d['data_through']}."
+        note += f" Margin (blend) uses this season and last season together, so a hot or cold start doesn't flip a team's label overnight. That's why a label can look out of step with Won by 2+ early in the season. * Fewer than 10 wins, small sample. GP = games played."
+    import datetime
+    thru = datetime.date.fromisoformat(d["data_through"])
+    cap = season if prev else f"{season} (games through {thru.strftime('%b')} {thru.day}, {thru.year})"
     html = ['<div style="overflow-x:auto;-webkit-overflow-scrolling:touch">',
             '<table style="width:100%;min-width:680px;border-collapse:collapse;font-size:14px">',
-            f"<caption style=\"text-align:left;font-weight:700;padding:0 0 6px\">NHL puck line profile, {season}</caption>",
+            f"<caption style=\"text-align:left;font-weight:700;padding:0 0 6px\">NHL puck line profile, {cap}</caption>",
             "<thead><tr>" + "".join(f"<th {TH if i < 2 else THR}>{h}</th>" for i, h in enumerate(heads)) + "</tr></thead><tbody>"]
     for _, r in rows:
         html.append("<tr>" + "".join(f"<td {TD if i < 2 else TDR}>{c}</td>" for i, c in enumerate(r)) + "</tr>")
-    lr = ["League average", "", "", pct(lg["win_by_2_pct"]), pct(lg["needed_eng_pct"]), pct(lg["otso_win_pct"]),
+    lr = ["League average", ""] + ([] if prev else [""]) + ["", pct(lg["win_by_2_pct"]), pct(lg["needed_eng_pct"]), pct(lg["otso_win_pct"]),
           pct(lg["cover_minus_15_pct"]), pct(lg["cover_plus_15_pct"])] + (["", ""] if prev else [])
     html.append("<tr>" + "".join(f"<td {TD if i < 2 else TDR}><strong>{c}</strong></td>" for i, c in enumerate(lr)) + "</tr>")
     html.append("</tbody></table></div>")
