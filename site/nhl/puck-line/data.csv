@@ -1,13 +1,13 @@
 Team,Tier,Wins 2026-27,Won by 2+ %,2+ wins that needed ENG %,OT/SO wins %,Covers -1.5 (all games) %,Covers +1.5 (all games) %,Won by 2+ % 2025-26
 Colorado Avalanche,Wide,10,90.0,0.0,0.0,50.0,83.3,74.6
-Edmonton Oilers,Wide,12,83.3,20.0,16.7,55.6,88.9,68.3
-New York Rangers,Wide,10,80.0,50.0,0.0,44.4,66.7,67.7
+Edmonton Oilers,Wide,13,84.6,27.3,15.4,57.9,89.5,68.3
+New York Rangers,Wide,10,80.0,50.0,0.0,42.1,63.2,67.7
 Tampa Bay Lightning,Wide,11,72.7,50.0,18.2,47.1,82.3,70.0
 Minnesota Wild,Wide,12,83.3,20.0,0.0,52.6,94.7,56.5
 Pittsburgh Penguins,Wide,6,50.0,0.0,50.0,16.7,66.7,70.7
 Washington Capitals,Wide,9,55.6,20.0,11.1,33.3,66.7,69.8
+Philadelphia Flyers,Wide,5,80.0,50.0,0.0,20.0,70.0,60.5
 Boston Bruins,Wide,13,76.9,20.0,23.1,55.6,83.3,55.6
-Philadelphia Flyers,Wide,4,75.0,33.3,0.0,15.8,68.4,60.5
 Carolina Hurricanes,Average,14,71.4,30.0,7.1,52.6,89.5,54.7
 Buffalo Sabres,Average,8,37.5,33.3,25.0,17.6,70.6,70.0
 Ottawa Senators,Average,11,54.5,33.3,18.2,33.3,66.7,63.6
@@ -28,6 +28,6 @@ Montréal Canadiens,Tight,11,36.4,0.0,36.4,23.5,88.2,52.1
 Anaheim Ducks,Tight,10,50.0,20.0,10.0,27.8,72.2,44.2
 Dallas Stars,Tight,10,50.0,20.0,30.0,29.4,82.3,44.0
 Los Angeles Kings,Tight,5,60.0,0.0,40.0,20.0,66.7,40.0
-Vancouver Canucks,Tight,3,33.3,0.0,66.7,5.3,42.1,40.0
-New York Islanders,Tight,7,42.9,0.0,28.6,18.8,68.8,37.2
-San Jose Sharks,Tight,7,14.3,0.0,71.4,5.3,52.6,43.6
+Vancouver Canucks,Tight,3,33.3,0.0,66.7,5.0,40.0,40.0
+New York Islanders,Tight,7,42.9,0.0,28.6,17.6,70.6,37.2
+San Jose Sharks,Tight,8,12.5,0.0,75.0,5.0,55.0,43.6
