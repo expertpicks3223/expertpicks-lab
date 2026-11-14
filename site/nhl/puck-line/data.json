@@ -1,19 +1,19 @@
 {
  "resource": "NHL Puck Line Profile",
- "updated_utc": "2026-11-13T09:46Z",
- "data_through": "2026-11-12",
+ "updated_utc": "2026-11-14T09:33Z",
+ "data_through": "2026-11-13",
  "current_season": "2026-27",
  "previous_season": "2025-26",
  "league": {
   "current": {
-   "gp": 618,
-   "wins": 309,
-   "won_by_2": 182,
-   "win_by_2_pct": 0.589,
-   "needed_eng_pct": 0.2418,
-   "otso_win_pct": 0.2265,
-   "cover_minus_15_pct": 0.2945,
-   "cover_plus_15_pct": 0.7055
+   "gp": 622,
+   "wins": 311,
+   "won_by_2": 183,
+   "win_by_2_pct": 0.5884,
+   "needed_eng_pct": 0.2404,
+   "otso_win_pct": 0.2283,
+   "cover_minus_15_pct": 0.2942,
+   "cover_plus_15_pct": 0.7058
   },
   "previous": {
    "gp": 2624,
@@ -782,14 +782,14 @@
    "team": "NSH",
    "name": "Nashville Predators",
    "current": {
-    "gp": 19,
-    "wins": 10,
+    "gp": 20,
+    "wins": 11,
     "won_by_2": 7,
-    "win_by_2_pct": 0.7,
+    "win_by_2_pct": 0.6364,
     "needed_eng_pct": 0.2857,
-    "otso_win_pct": 0.2,
-    "cover_minus_15_pct": 0.3684,
-    "cover_plus_15_pct": 0.8421
+    "otso_win_pct": 0.2727,
+    "cover_minus_15_pct": 0.35,
+    "cover_plus_15_pct": 0.85
    },
    "previous": {
     "gp": 82,
@@ -802,7 +802,7 @@
     "cover_plus_15_pct": 0.6829
    },
    "tier": "Average",
-   "tier_score": 0.5491,
+   "tier_score": 0.5314,
    "previous_prices": {
     "minus": {
      "bets": 72,
@@ -868,14 +868,14 @@
    "team": "NYR",
    "name": "New York Rangers",
    "current": {
-    "gp": 20,
-    "wins": 11,
-    "won_by_2": 9,
-    "win_by_2_pct": 0.8182,
-    "needed_eng_pct": 0.5556,
+    "gp": 21,
+    "wins": 12,
+    "won_by_2": 10,
+    "win_by_2_pct": 0.8333,
+    "needed_eng_pct": 0.5,
     "otso_win_pct": 0.0,
-    "cover_minus_15_pct": 0.45,
-    "cover_plus_15_pct": 0.65
+    "cover_minus_15_pct": 0.4762,
+    "cover_plus_15_pct": 0.6667
    },
    "previous": {
     "gp": 82,
@@ -888,7 +888,7 @@
     "cover_plus_15_pct": 0.6707
    },
    "tier": "Wide",
-   "tier_score": 0.7268,
+   "tier_score": 0.7353,
    "previous_prices": {
     "minus": {
      "bets": 73,
@@ -1298,14 +1298,14 @@
    "team": "VAN",
    "name": "Vancouver Canucks",
    "current": {
-    "gp": 20,
+    "gp": 21,
     "wins": 3,
     "won_by_2": 1,
     "win_by_2_pct": 0.3333,
     "needed_eng_pct": 0.0,
     "otso_win_pct": 0.6667,
-    "cover_minus_15_pct": 0.05,
-    "cover_plus_15_pct": 0.4
+    "cover_minus_15_pct": 0.0476,
+    "cover_plus_15_pct": 0.381
    },
    "previous": {
     "gp": 82,
@@ -1341,14 +1341,14 @@
    "team": "VGK",
    "name": "Vegas Golden Knights",
    "current": {
-    "gp": 20,
+    "gp": 21,
     "wins": 13,
     "won_by_2": 8,
     "win_by_2_pct": 0.6154,
     "needed_eng_pct": 0.125,
     "otso_win_pct": 0.1538,
-    "cover_minus_15_pct": 0.4,
-    "cover_plus_15_pct": 0.8
+    "cover_minus_15_pct": 0.381,
+    "cover_plus_15_pct": 0.8095
    },
    "previous": {
     "gp": 82,
