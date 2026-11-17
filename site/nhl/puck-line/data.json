@@ -1,19 +1,19 @@
 {
  "resource": "NHL Puck Line Profile",
- "updated_utc": "2026-11-16T19:07Z",
- "data_through": "2026-11-15",
+ "updated_utc": "2026-11-17T18:00Z",
+ "data_through": "2026-11-16",
  "current_season": "2026-27",
  "previous_season": "2025-26",
  "league": {
   "current": {
-   "gp": 660,
-   "wins": 330,
-   "won_by_2": 196,
-   "win_by_2_pct": 0.5939,
-   "needed_eng_pct": 0.2296,
-   "otso_win_pct": 0.2242,
-   "cover_minus_15_pct": 0.297,
-   "cover_plus_15_pct": 0.703
+   "gp": 664,
+   "wins": 332,
+   "won_by_2": 197,
+   "win_by_2_pct": 0.5934,
+   "needed_eng_pct": 0.2284,
+   "otso_win_pct": 0.2229,
+   "cover_minus_15_pct": 0.2967,
+   "cover_plus_15_pct": 0.7033
   },
   "previous": {
    "gp": 2624,
@@ -696,14 +696,14 @@
    "team": "MTL",
    "name": "Montr\u00e9al Canadiens",
    "current": {
-    "gp": 20,
+    "gp": 21,
     "wins": 12,
     "won_by_2": 5,
     "win_by_2_pct": 0.4167,
     "needed_eng_pct": 0.0,
     "otso_win_pct": 0.3333,
-    "cover_minus_15_pct": 0.25,
-    "cover_plus_15_pct": 0.85
+    "cover_minus_15_pct": 0.2381,
+    "cover_plus_15_pct": 0.8095
    },
    "previous": {
     "gp": 82,
@@ -868,14 +868,14 @@
    "team": "NYR",
    "name": "New York Rangers",
    "current": {
-    "gp": 21,
-    "wins": 12,
-    "won_by_2": 10,
-    "win_by_2_pct": 0.8333,
-    "needed_eng_pct": 0.5,
+    "gp": 22,
+    "wins": 13,
+    "won_by_2": 11,
+    "win_by_2_pct": 0.8462,
+    "needed_eng_pct": 0.4545,
     "otso_win_pct": 0.0,
-    "cover_minus_15_pct": 0.4762,
-    "cover_plus_15_pct": 0.6667
+    "cover_minus_15_pct": 0.5,
+    "cover_plus_15_pct": 0.6818
    },
    "previous": {
     "gp": 82,
@@ -888,7 +888,7 @@
     "cover_plus_15_pct": 0.6707
    },
    "tier": "Wide",
-   "tier_score": 0.7353,
+   "tier_score": 0.7433,
    "previous_prices": {
     "minus": {
      "bets": 73,
@@ -1255,14 +1255,14 @@
    "team": "UTA",
    "name": "Utah Mammoth",
    "current": {
-    "gp": 21,
+    "gp": 22,
     "wins": 10,
     "won_by_2": 5,
     "win_by_2_pct": 0.5,
     "needed_eng_pct": 0.2,
     "otso_win_pct": 0.2,
-    "cover_minus_15_pct": 0.2381,
-    "cover_plus_15_pct": 0.619
+    "cover_minus_15_pct": 0.2273,
+    "cover_plus_15_pct": 0.6364
    },
    "previous": {
     "gp": 82,
@@ -1298,14 +1298,14 @@
    "team": "VAN",
    "name": "Vancouver Canucks",
    "current": {
-    "gp": 22,
-    "wins": 4,
+    "gp": 23,
+    "wins": 5,
     "won_by_2": 2,
-    "win_by_2_pct": 0.5,
+    "win_by_2_pct": 0.4,
     "needed_eng_pct": 0.0,
-    "otso_win_pct": 0.5,
-    "cover_minus_15_pct": 0.0909,
-    "cover_plus_15_pct": 0.4091
+    "otso_win_pct": 0.4,
+    "cover_minus_15_pct": 0.087,
+    "cover_plus_15_pct": 0.4348
    },
    "previous": {
     "gp": 82,
@@ -1318,7 +1318,7 @@
     "cover_plus_15_pct": 0.5122
    },
    "tier": "Tight",
-   "tier_score": 0.4167,
+   "tier_score": 0.4,
    "previous_prices": {
     "minus": {
      "bets": 78,
