@@ -1,19 +1,19 @@
 {
  "resource": "NHL Puck Line Profile",
- "updated_utc": "2026-11-18T17:42Z",
- "data_through": "2026-11-17",
+ "updated_utc": "2026-11-19T17:52Z",
+ "data_through": "2026-11-18",
  "current_season": "2026-27",
  "previous_season": "2025-26",
  "league": {
   "current": {
-   "gp": 686,
-   "wins": 343,
-   "won_by_2": 205,
-   "win_by_2_pct": 0.5977,
-   "needed_eng_pct": 0.2244,
-   "otso_win_pct": 0.2187,
-   "cover_minus_15_pct": 0.2988,
-   "cover_plus_15_pct": 0.7012
+   "gp": 692,
+   "wins": 346,
+   "won_by_2": 207,
+   "win_by_2_pct": 0.5983,
+   "needed_eng_pct": 0.2222,
+   "otso_win_pct": 0.2168,
+   "cover_minus_15_pct": 0.2991,
+   "cover_plus_15_pct": 0.7009
   },
   "previous": {
    "gp": 2624,
@@ -137,14 +137,14 @@
    "team": "BOS",
    "name": "Boston Bruins",
    "current": {
-    "gp": 21,
-    "wins": 13,
-    "won_by_2": 10,
-    "win_by_2_pct": 0.7692,
-    "needed_eng_pct": 0.2,
-    "otso_win_pct": 0.2308,
-    "cover_minus_15_pct": 0.4762,
-    "cover_plus_15_pct": 0.7143
+    "gp": 22,
+    "wins": 14,
+    "won_by_2": 11,
+    "win_by_2_pct": 0.7857,
+    "needed_eng_pct": 0.1818,
+    "otso_win_pct": 0.2143,
+    "cover_minus_15_pct": 0.5,
+    "cover_plus_15_pct": 0.7273
    },
    "previous": {
     "gp": 82,
@@ -157,7 +157,7 @@
     "cover_plus_15_pct": 0.7683
    },
    "tier": "Wide",
-   "tier_score": 0.6398,
+   "tier_score": 0.6504,
    "previous_prices": {
     "minus": {
      "bets": 72,
@@ -395,14 +395,14 @@
    "team": "COL",
    "name": "Colorado Avalanche",
    "current": {
-    "gp": 21,
+    "gp": 22,
     "wins": 12,
     "won_by_2": 11,
     "win_by_2_pct": 0.9167,
     "needed_eng_pct": 0.0,
     "otso_win_pct": 0.0,
-    "cover_minus_15_pct": 0.5238,
-    "cover_plus_15_pct": 0.8571
+    "cover_minus_15_pct": 0.5,
+    "cover_plus_15_pct": 0.8182
    },
    "previous": {
     "gp": 82,
@@ -481,14 +481,14 @@
    "team": "DET",
    "name": "Detroit Red Wings",
    "current": {
-    "gp": 21,
+    "gp": 22,
     "wins": 8,
     "won_by_2": 5,
     "win_by_2_pct": 0.625,
     "needed_eng_pct": 0.6,
     "otso_win_pct": 0.25,
-    "cover_minus_15_pct": 0.2381,
-    "cover_plus_15_pct": 0.7619
+    "cover_minus_15_pct": 0.2273,
+    "cover_plus_15_pct": 0.7273
    },
    "previous": {
     "gp": 82,
@@ -696,14 +696,14 @@
    "team": "MTL",
    "name": "Montr\u00e9al Canadiens",
    "current": {
-    "gp": 21,
-    "wins": 12,
+    "gp": 22,
+    "wins": 13,
     "won_by_2": 5,
-    "win_by_2_pct": 0.4167,
+    "win_by_2_pct": 0.3846,
     "needed_eng_pct": 0.0,
-    "otso_win_pct": 0.3333,
-    "cover_minus_15_pct": 0.2381,
-    "cover_plus_15_pct": 0.8095
+    "otso_win_pct": 0.3077,
+    "cover_minus_15_pct": 0.2273,
+    "cover_plus_15_pct": 0.8182
    },
    "previous": {
     "gp": 82,
@@ -716,7 +716,7 @@
     "cover_plus_15_pct": 0.7805
    },
    "tier": "Tight",
-   "tier_score": 0.4818,
+   "tier_score": 0.4672,
    "previous_prices": {
     "minus": {
      "bets": 74,
@@ -739,14 +739,14 @@
    "team": "NJD",
    "name": "New Jersey Devils",
    "current": {
-    "gp": 21,
+    "gp": 22,
     "wins": 15,
     "won_by_2": 9,
     "win_by_2_pct": 0.6,
     "needed_eng_pct": 0.1111,
     "otso_win_pct": 0.3333,
-    "cover_minus_15_pct": 0.4286,
-    "cover_plus_15_pct": 0.7143
+    "cover_minus_15_pct": 0.4091,
+    "cover_plus_15_pct": 0.7273
    },
    "previous": {
     "gp": 82,
@@ -1255,14 +1255,14 @@
    "team": "UTA",
    "name": "Utah Mammoth",
    "current": {
-    "gp": 22,
-    "wins": 10,
-    "won_by_2": 5,
-    "win_by_2_pct": 0.5,
-    "needed_eng_pct": 0.2,
-    "otso_win_pct": 0.2,
-    "cover_minus_15_pct": 0.2273,
-    "cover_plus_15_pct": 0.6364
+    "gp": 23,
+    "wins": 11,
+    "won_by_2": 6,
+    "win_by_2_pct": 0.5455,
+    "needed_eng_pct": 0.1667,
+    "otso_win_pct": 0.1818,
+    "cover_minus_15_pct": 0.2609,
+    "cover_plus_15_pct": 0.6522
    },
    "previous": {
     "gp": 82,
@@ -1275,7 +1275,7 @@
     "cover_plus_15_pct": 0.7317
    },
    "tier": "Average",
-   "tier_score": 0.5853,
+   "tier_score": 0.5986,
    "previous_prices": {
     "minus": {
      "bets": 73,
