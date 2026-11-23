@@ -1,19 +1,19 @@
 {
  "resource": "NHL Puck Line Profile",
- "updated_utc": "2026-11-22T16:49Z",
- "data_through": "2026-11-21",
+ "updated_utc": "2026-11-23T20:45Z",
+ "data_through": "2026-11-22",
  "current_season": "2026-27",
  "previous_season": "2025-26",
  "league": {
   "current": {
-   "gp": 744,
-   "wins": 372,
-   "won_by_2": 218,
-   "win_by_2_pct": 0.586,
-   "needed_eng_pct": 0.2202,
-   "otso_win_pct": 0.2231,
-   "cover_minus_15_pct": 0.293,
-   "cover_plus_15_pct": 0.707
+   "gp": 754,
+   "wins": 377,
+   "won_by_2": 221,
+   "win_by_2_pct": 0.5862,
+   "needed_eng_pct": 0.2172,
+   "otso_win_pct": 0.2228,
+   "cover_minus_15_pct": 0.2931,
+   "cover_plus_15_pct": 0.7069
   },
   "previous": {
    "gp": 2624,
@@ -180,14 +180,14 @@
    "team": "BUF",
    "name": "Buffalo Sabres",
    "current": {
-    "gp": 23,
-    "wins": 9,
-    "won_by_2": 4,
-    "win_by_2_pct": 0.4444,
-    "needed_eng_pct": 0.25,
-    "otso_win_pct": 0.2222,
-    "cover_minus_15_pct": 0.1739,
-    "cover_plus_15_pct": 0.6957
+    "gp": 24,
+    "wins": 10,
+    "won_by_2": 5,
+    "win_by_2_pct": 0.5,
+    "needed_eng_pct": 0.2,
+    "otso_win_pct": 0.2,
+    "cover_minus_15_pct": 0.2083,
+    "cover_plus_15_pct": 0.7083
    },
    "previous": {
     "gp": 82,
@@ -200,7 +200,7 @@
     "cover_plus_15_pct": 0.7561
    },
    "tier": "Wide",
-   "tier_score": 0.6207,
+   "tier_score": 0.6333,
    "previous_prices": {
     "minus": {
      "bets": 66,
@@ -223,14 +223,14 @@
    "team": "CAR",
    "name": "Carolina Hurricanes",
    "current": {
-    "gp": 23,
-    "wins": 17,
-    "won_by_2": 13,
-    "win_by_2_pct": 0.7647,
-    "needed_eng_pct": 0.2308,
-    "otso_win_pct": 0.0588,
-    "cover_minus_15_pct": 0.5652,
-    "cover_plus_15_pct": 0.913
+    "gp": 24,
+    "wins": 18,
+    "won_by_2": 14,
+    "win_by_2_pct": 0.7778,
+    "needed_eng_pct": 0.2143,
+    "otso_win_pct": 0.0556,
+    "cover_minus_15_pct": 0.5833,
+    "cover_plus_15_pct": 0.9167
    },
    "previous": {
     "gp": 82,
@@ -243,7 +243,7 @@
     "cover_plus_15_pct": 0.7805
    },
    "tier": "Wide",
-   "tier_score": 0.6471,
+   "tier_score": 0.6564,
    "previous_prices": {
     "minus": {
      "bets": 72,
@@ -352,14 +352,14 @@
    "team": "CHI",
    "name": "Chicago Blackhawks",
    "current": {
-    "gp": 23,
-    "wins": 7,
-    "won_by_2": 3,
-    "win_by_2_pct": 0.4286,
-    "needed_eng_pct": 0.6667,
-    "otso_win_pct": 0.4286,
-    "cover_minus_15_pct": 0.1304,
-    "cover_plus_15_pct": 0.4783
+    "gp": 24,
+    "wins": 8,
+    "won_by_2": 4,
+    "win_by_2_pct": 0.5,
+    "needed_eng_pct": 0.5,
+    "otso_win_pct": 0.375,
+    "cover_minus_15_pct": 0.1667,
+    "cover_plus_15_pct": 0.5
    },
    "previous": {
     "gp": 82,
@@ -372,7 +372,7 @@
     "cover_plus_15_pct": 0.622
    },
    "tier": "Average",
-   "tier_score": 0.5198,
+   "tier_score": 0.5369,
    "previous_prices": {
     "minus": {
      "bets": 74,
@@ -438,14 +438,14 @@
    "team": "DAL",
    "name": "Dallas Stars",
    "current": {
-    "gp": 22,
-    "wins": 14,
+    "gp": 23,
+    "wins": 15,
     "won_by_2": 6,
-    "win_by_2_pct": 0.4286,
+    "win_by_2_pct": 0.4,
     "needed_eng_pct": 0.1667,
-    "otso_win_pct": 0.4286,
-    "cover_minus_15_pct": 0.2727,
-    "cover_plus_15_pct": 0.8182
+    "otso_win_pct": 0.4,
+    "cover_minus_15_pct": 0.2609,
+    "cover_plus_15_pct": 0.8261
    },
    "previous": {
     "gp": 82,
@@ -458,7 +458,7 @@
     "cover_plus_15_pct": 0.8293
    },
    "tier": "Tight",
-   "tier_score": 0.4353,
+   "tier_score": 0.4229,
    "previous_prices": {
     "minus": {
      "bets": 72,
@@ -524,14 +524,14 @@
    "team": "EDM",
    "name": "Edmonton Oilers",
    "current": {
-    "gp": 25,
+    "gp": 26,
     "wins": 17,
     "won_by_2": 13,
     "win_by_2_pct": 0.7647,
     "needed_eng_pct": 0.2308,
     "otso_win_pct": 0.1765,
-    "cover_minus_15_pct": 0.52,
-    "cover_plus_15_pct": 0.84
+    "cover_minus_15_pct": 0.5,
+    "cover_plus_15_pct": 0.8462
    },
    "previous": {
     "gp": 82,
@@ -868,14 +868,14 @@
    "team": "NYR",
    "name": "New York Rangers",
    "current": {
-    "gp": 22,
+    "gp": 23,
     "wins": 13,
     "won_by_2": 11,
     "win_by_2_pct": 0.8462,
     "needed_eng_pct": 0.4545,
     "otso_win_pct": 0.0,
-    "cover_minus_15_pct": 0.5,
-    "cover_plus_15_pct": 0.6818
+    "cover_minus_15_pct": 0.4783,
+    "cover_plus_15_pct": 0.6522
    },
    "previous": {
     "gp": 82,
@@ -997,14 +997,14 @@
    "team": "PIT",
    "name": "Pittsburgh Penguins",
    "current": {
-    "gp": 22,
+    "gp": 23,
     "wins": 7,
     "won_by_2": 3,
     "win_by_2_pct": 0.4286,
     "needed_eng_pct": 0.0,
     "otso_win_pct": 0.5714,
-    "cover_minus_15_pct": 0.1364,
-    "cover_plus_15_pct": 0.6364
+    "cover_minus_15_pct": 0.1304,
+    "cover_plus_15_pct": 0.6522
    },
    "previous": {
     "gp": 82,
@@ -1126,14 +1126,14 @@
    "team": "STL",
    "name": "St. Louis Blues",
    "current": {
-    "gp": 23,
-    "wins": 12,
+    "gp": 24,
+    "wins": 13,
     "won_by_2": 8,
-    "win_by_2_pct": 0.6667,
+    "win_by_2_pct": 0.6154,
     "needed_eng_pct": 0.25,
-    "otso_win_pct": 0.0833,
-    "cover_minus_15_pct": 0.3478,
-    "cover_plus_15_pct": 0.6522
+    "otso_win_pct": 0.1538,
+    "cover_minus_15_pct": 0.3333,
+    "cover_plus_15_pct": 0.6667
    },
    "previous": {
     "gp": 82,
@@ -1146,7 +1146,7 @@
     "cover_plus_15_pct": 0.7073
    },
    "tier": "Average",
-   "tier_score": 0.5709,
+   "tier_score": 0.5536,
    "previous_prices": {
     "minus": {
      "bets": 74,
@@ -1169,14 +1169,14 @@
    "team": "TBL",
    "name": "Tampa Bay Lightning",
    "current": {
-    "gp": 22,
+    "gp": 23,
     "wins": 15,
     "won_by_2": 12,
     "win_by_2_pct": 0.8,
     "needed_eng_pct": 0.3333,
     "otso_win_pct": 0.1333,
-    "cover_minus_15_pct": 0.5455,
-    "cover_plus_15_pct": 0.8182
+    "cover_minus_15_pct": 0.5217,
+    "cover_plus_15_pct": 0.7826
    },
    "previous": {
     "gp": 82,
@@ -1298,14 +1298,14 @@
    "team": "VAN",
    "name": "Vancouver Canucks",
    "current": {
-    "gp": 25,
+    "gp": 26,
     "wins": 6,
     "won_by_2": 2,
     "win_by_2_pct": 0.3333,
     "needed_eng_pct": 0.0,
     "otso_win_pct": 0.5,
-    "cover_minus_15_pct": 0.08,
-    "cover_plus_15_pct": 0.44
+    "cover_minus_15_pct": 0.0769,
+    "cover_plus_15_pct": 0.4231
    },
    "previous": {
     "gp": 82,
