@@ -1,19 +1,19 @@
 {
  "resource": "NHL Puck Line Profile",
- "updated_utc": "2026-11-24T19:49Z",
- "data_through": "2026-11-23",
+ "updated_utc": "2026-11-25T18:55Z",
+ "data_through": "2026-11-24",
  "current_season": "2026-27",
  "previous_season": "2025-26",
  "league": {
   "current": {
-   "gp": 768,
-   "wins": 384,
-   "won_by_2": 224,
-   "win_by_2_pct": 0.5833,
-   "needed_eng_pct": 0.2277,
-   "otso_win_pct": 0.2188,
-   "cover_minus_15_pct": 0.2917,
-   "cover_plus_15_pct": 0.7083
+   "gp": 770,
+   "wins": 385,
+   "won_by_2": 225,
+   "win_by_2_pct": 0.5844,
+   "needed_eng_pct": 0.2311,
+   "otso_win_pct": 0.2182,
+   "cover_minus_15_pct": 0.2922,
+   "cover_plus_15_pct": 0.7078
   },
   "previous": {
    "gp": 2624,
@@ -524,14 +524,14 @@
    "team": "EDM",
    "name": "Edmonton Oilers",
    "current": {
-    "gp": 26,
+    "gp": 27,
     "wins": 17,
     "won_by_2": 13,
     "win_by_2_pct": 0.7647,
     "needed_eng_pct": 0.2308,
     "otso_win_pct": 0.1765,
-    "cover_minus_15_pct": 0.5,
-    "cover_plus_15_pct": 0.8462
+    "cover_minus_15_pct": 0.4815,
+    "cover_plus_15_pct": 0.8148
    },
    "previous": {
     "gp": 82,
@@ -1341,14 +1341,14 @@
    "team": "VGK",
    "name": "Vegas Golden Knights",
    "current": {
-    "gp": 25,
-    "wins": 14,
-    "won_by_2": 8,
-    "win_by_2_pct": 0.5714,
-    "needed_eng_pct": 0.125,
-    "otso_win_pct": 0.2143,
-    "cover_minus_15_pct": 0.32,
-    "cover_plus_15_pct": 0.8
+    "gp": 26,
+    "wins": 15,
+    "won_by_2": 9,
+    "win_by_2_pct": 0.6,
+    "needed_eng_pct": 0.2222,
+    "otso_win_pct": 0.2,
+    "cover_minus_15_pct": 0.3462,
+    "cover_plus_15_pct": 0.8077
    },
    "previous": {
     "gp": 82,
@@ -1361,7 +1361,7 @@
     "cover_plus_15_pct": 0.8049
    },
    "tier": "Average",
-   "tier_score": 0.5822,
+   "tier_score": 0.5941,
    "previous_prices": {
     "minus": {
      "bets": 71,
